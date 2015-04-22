@@ -3,7 +3,7 @@
 Plugin Name: FMTC Pods
 Plugin URI: http://www.fmtc.co/tools/pods
 Description: Display FMTC Pods in your WordPress site
-Version: 1.4
+Version: 1.41
 Author: FMTC
 Author URI: http://fmtc.co
 License: GPL2
@@ -117,7 +117,7 @@ INLINE_SCRIPT;
 			$cPodSrc .= '&sid=' . urlencode($rsAttributes['sid']);
 		}
 
-		$cReturn .= '<iframe id="fmtcpod_' . htmlentities($rsAttributes['pod']) . '" src="about:blank" scrolling="no" border="0" frameborder="0" seamless="seamless" style="background-color: transparent; border: 0px none transparent; padding: 0px; overflow: hidden;" name="fmtcpod_' . htmlentities($rsAttributes['pod']) . '" width="' . $rsPod['nWidth'] . '">';
+		$cReturn .= '<iframe id="fmtcpod_' . htmlentities($rsAttributes['pod']) . '" src="about:blank" scrolling="no" border="0" frameborder="0" seamless="seamless" style="background-color: transparent; border: 0px none transparent; padding: 0px; overflow: hidden; max-width: 100%;" name="fmtcpod_' . htmlentities($rsAttributes['pod']) . '" width="' . $rsPod['nWidth'] . '" class="fmtciframe">';
 		for ($i = 0; $i < min(count($aDeals), $rsPod['nMaxOffers']); $i++) {
 			$rsDeal = $aDeals[$i];
 			$cReturn .= "<p><a href=\"http://fmtc.co/" . $rsDeal['nCouponID'] . "/" . $rsPod['applicationCode'];
@@ -201,7 +201,7 @@ window.addEventListener('message', function(e) {
 
 	echo(urlencode(implode('/', array_slice($aOriginParts, 0, 3))));
 
-	?>" width="98%" height="220" seamless="seamless" scrolling="no" frameborder="0" style="background-color: transparent; border: 0px none transparent; padding: 0px; overflow: hidden;"></iframe></center>
+	?>" width="98%" height="220" seamless="seamless" scrolling="no" frameborder="0" style="background-color: transparent; border: 0px none transparent; padding: 0px; overflow: hidden; max-width: 100%;"></iframe></center>
 </div>
 <?php
 }

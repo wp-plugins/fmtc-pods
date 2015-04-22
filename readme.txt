@@ -45,6 +45,9 @@ Pods are monetized via Skimlinks. Once you've created your free FMTC account, ad
 
 == Changelog ==
 
+= 1.41 =
+* Added class name fmtc_iframe to iframe to target exclusion in BJ Lazy Load
+
 = 1.4 =
 * Initial release to WordPress.org
 
@@ -56,3 +59,6 @@ Pods are monetized via Skimlinks. Once you've created your free FMTC account, ad
 
 = 1.4 =
 * Rewrote how the iframe src is populated, so it only loads once the window is ready (fixed bug with iframe not resizing in some cases)
+
+= 1.41 =
+* max-width on iframe for responsiveness
