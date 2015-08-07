@@ -90,7 +90,7 @@ function fmtcpod_func($rsAttributes) {
 		if (
 			(e.origin == "http://pods.formetocoupon.com") ||
 			(e.origin == "http://podcdn.formetocoupon.com") ||
-			(e.origin == "http://pods.fntc.co") ||
+			(e.origin == "http://pods.fmtc.co") ||
 			(e.origin == "http://podcdn.fmtc.co")
 			) {
 			try{
