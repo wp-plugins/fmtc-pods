@@ -3,7 +3,7 @@
 Plugin Name: FMTC Pods
 Plugin URI: http://www.fmtc.co/tools/pods
 Description: Display FMTC Pods in your WordPress site
-Version: 1.41
+Version: 1.4.2
 Author: FMTC
 Author URI: http://fmtc.co
 License: GPL2
@@ -54,7 +54,7 @@ function fmtcpod_func($rsAttributes) {
 		$cHost = 'pods.formetocoupon.com';
 	}
 
-	$cJSON = @file_get_contents('http://' . $cHost . '/' . urlencode($rsAttributes['pod']) . '.json');
+	$cJSON = @file_get_contents('http://' . $cHost . '/' . urlencode($rsAttributes['pod']) . '.json?purpose=pod_plugin');
 
 	$cReturn = '';
 	$aOriginParts = explode('/', get_site_url());

@@ -3,7 +3,7 @@ Contributors: fmtc
 Tags: affiliate, coupons, deals
 Requires at least: 3.0.1
 Tested up to: 4.0.1
-Stable tag: trunk
+Stable tag: 1.4.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -44,6 +44,9 @@ Pods are monetized via Skimlinks. Once you've created your free FMTC account, ad
 
 
 == Changelog ==
+
+= 1.4.2 =
+* Bug Fix: Corrected JSON feed received after Pods update.
 
 = 1.41 =
 * Added class name fmtc_iframe to iframe to target exclusion in BJ Lazy Load
